@@ -20,7 +20,7 @@ export default function Card(props) {
 				<p className="py-2 dark:text-white h-40">{description}</p>
 				<div className="flex justify-center gap-4">
 					{tools.map((tool) => (
-						<Tool name={tool} />
+						<Tool name={tool.name} key={tool.key}/>
 					))}
 				</div>
 			</a>

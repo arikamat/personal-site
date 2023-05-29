@@ -15,7 +15,7 @@ export default function Featured(props) {
 			</h3>
 			<div className="lg:flex gap-10">
 				{feat.map((project) => (
-					<Card title={project.title} description={project.description} tools={project.tools} link={project.link}/>
+					<Card title={project.title} description={project.description} tools={project.tools} link={project.link} key={project.id}/>
 				))}
 			</div>
 		</div>
