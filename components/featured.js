@@ -1,8 +1,5 @@
 "use client";
 import React from "react";
-import design from "../public/design.png";
-import code from "../public/code.png";
-import consulting from "../public/consulting.png";
 import Image from "next/image";
 import { projectsData } from "../data/projects";
 import Card from "../components/card";
