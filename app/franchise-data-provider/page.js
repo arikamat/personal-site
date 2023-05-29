@@ -20,16 +20,16 @@ export default function Home(props) {
 								</span>
 							</h3>
 							<p className="text-gray-800 dark:text-white py-10 px-10 text-justify mt-5">
-								Hello there! I'm Ari, an undergraduate studying
+								Hello there! I&apos;m Ari, an undergraduate studying
 								Computer Science and Applied Mathematics at the
 								Honors College of New Jersey Institute of
-								Technology. I'm passionate about all things
+								Technology. I&apos;m passionate about all things
 								technology and love building software,
-								especially when it has a real impact on people's
+								especially when it has a real impact on people&apos;s
 								lives.
 								<br />
 								<br />
-								When I'm not "Playing Visual Studio Code", you
+								When I&apos;m not &ldquo;Playing Visual Studio Code&rdquo;, you
 								can find me taking pictures of sunsets with my
 								sister, watching KDramas, drinking coffee,
 								enjoying a Bollywood movie with my family, or
