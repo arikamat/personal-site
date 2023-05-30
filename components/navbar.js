@@ -1,10 +1,12 @@
 import React from "react";
-import { useContext, useState } from "react";
+import { useContext, useState,useRef } from "react";
 import { BsFillMoonStarsFill, BsFillBrightnessHighFill } from "react-icons/bs";
 import { DarkModeContext } from "../context/DarkModeProvider";
 import Link from "next/link";
 
 const NavBar = () => {
+	const scrollRef = useRef(null);
+
 	const { darkMode, setDarkMode } = useContext(DarkModeContext);
 	const [isHovered, setIsHovered] = useState(false);
 
@@ -16,7 +18,7 @@ const NavBar = () => {
 		setIsHovered(false);
 	};
 	return (
-		<nav className="py-10 mb-5 flex justify-between bg-white dark:bg-gray-900">
+		<nav className="py-10 mb-5 flex justify-between ">
 			<Link href="/" className="my-auto">
 				<h1
 					onMouseEnter={handleMouseEnter}
