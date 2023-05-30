@@ -24,7 +24,9 @@ export default function Home() {
 				<section className=" bg-gray-200 dark:bg-gray-900 px-10 md:px-20 lg:px-60 py-4">
 					<Featured />
 				</section>
-
+				<section className=" bg-gray-200 dark:bg-gray-900 px-10 md:px-20 lg:px-60 py-4">
+					<Projects />
+				</section>
 				{/* <section className="px-10 md:px-20 lg:px-40">
 					<div>
 						<h3 className="text-3xl py-1 dark:text-white">

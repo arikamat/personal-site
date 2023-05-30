@@ -1,17 +1,48 @@
 "use client";
 import React from "react";
-import WorkEducation from "../components/workeducation";
-import {projectsData} from '../data/projects';
+import { projectsData } from "../data/projects";
+import Card from "../components/card";
+import { useState } from "react";
+import { AiOutlineArrowDown, AiOutlineArrowUp } from "react-icons/ai";
+export default function Projects(props) {
+	const [showMore, setShowMore] = useState(false);
+	const visibleProjects = showMore ? projectsData : projectsData.slice(0, 6);
 
-export default function Projects() {
+	const handleShowMore = () => {
+		setShowMore(!showMore);
+	};
 	return (
-	  <div>
-		{projectsData.map((project) => (
-		  <div key={project.id}>
-			<h2>{project.title}</h2>
-			<p>{project.description}</p>
-		  </div>
-		))}
-	  </div>
+		<div className="relative bg-white ring-2 ring-zinc-100 dark:bg-gray-800 dark:ring-slate-500 p-10 rounded-xl drop-shadow my-10">
+			<h3 className="text-3xl py-1 px-10 dark:text-white mb-10">
+				<span className="border-b-4 border-teal-600 dark:border-teal-300">
+					Projects
+				</span>
+			</h3>
+
+			<div className="grid grid-cols-1 2xl:grid-cols-3 gap-5">
+				{visibleProjects.map((project) => (
+					<Card project={project} key={project.id} />
+				))}
+			</div>
+			<div className="flex justify-center">
+				{projectsData.length > 6 && (
+					<button
+						onClick={handleShowMore}
+						className="bg-teal-500 hover:bg-teal-700 text-white font-bold w-10 h-10 rounded-full mt-5 transition-colors duration-500 ease-in-out animate-pulse"
+						style={{ animationDuration: "0.75s" }}
+					>
+						{showMore ? (
+							<div>
+								<AiOutlineArrowUp className="inline-block my-auto text-xl" />
+							</div>
+						) : (
+							<div>
+								<AiOutlineArrowDown className="inline-block my-auto text-xl" />
+							</div>
+						)}
+					</button>
+				)}
+			</div>
+		</div>
 	);
-  }
+}

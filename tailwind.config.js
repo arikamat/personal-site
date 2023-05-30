@@ -14,6 +14,9 @@ module.exports = {
       fontFamily: {
         burtons: "burtons",
       },
+      screens:{
+        'xxl': '1400',
+      }
     },
   },
   plugins: [],

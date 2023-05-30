@@ -8,7 +8,7 @@ export default function Home(props) {
 	return (
 		<div className={darkMode ? "dark" : "light"}>
 			<main className="bg-white dark:bg-gray-900 text-black">
-				<section className="	px-10 md:px-20 lg:px-40">
+				<section className="px-10 md:px-20 lg:px-40">
 					<NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
 				</section>
 				<div className="relative  p-10  my-10">
