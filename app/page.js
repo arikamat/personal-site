@@ -36,19 +36,7 @@ export default function Home() {
 				>
 					<Projects />
 				</section>
-				<section
-					id="resume"
-					className=" bg-gray-200 dark:bg-gray-900 px-10 md:px-20 lg:px-60 py-4"
-				>
-					<div className="relative bg-white ring-2 ring-zinc-100 dark:bg-gray-800 dark:ring-slate-500 pt-10 p-5 md:p-10 rounded-xl drop-shadow my-10">
-						<h3 className="text-3xl py-1 md:px-10 dark:text-white mb-10">
-							<span className="border-b-4 border-teal-600 dark:border-teal-300">
-								Resume
-							</span>
-						</h3>
-						<Resume />
-					</div>
-				</section>
+			
 				<Footer />
 			</main>
 		</div>
