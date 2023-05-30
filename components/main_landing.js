@@ -20,11 +20,11 @@ export default function MainLanding(props) {
 				<h3 className=" text-2xl mt-5 py-2 md:text-3xl dark:text-white">
 					<TypeAnimation
 						sequence={[
-							"Student.", // Types 'One'
+							"Student.", 
 							1000, // Waits 1s
-							"Developer.", // Deletes 'One' and types 'Two'
-							1000, // Waits 2s
-							"Roboticist.", // Types 'Three' without deleting 'Two'
+							"Developer.",
+							1000, // Waits 1s
+							"Roboticist.", 
 							1000,
 							"Engineer.", 
 							1000,
