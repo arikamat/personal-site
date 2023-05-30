@@ -10,7 +10,18 @@ export default function Projects(props) {
 
 	const handleShowMore = () => {
 		setShowMore(!showMore);
+		handleMouseLeave();
 	};
+	const [isHovered, setIsHovered] = useState(false);
+
+	const handleMouseEnter = () => {
+		setIsHovered(true);
+	};
+
+	const handleMouseLeave = () => {
+		setIsHovered(false);
+	};
+
 	return (
 		<div className="relative bg-white ring-2 ring-zinc-100 dark:bg-gray-800 dark:ring-slate-500 p-10 rounded-xl drop-shadow my-10">
 			<h3 className="text-3xl py-1 px-10 dark:text-white mb-10">
@@ -28,8 +39,14 @@ export default function Projects(props) {
 				{projectsData.length > 6 && (
 					<button
 						onClick={handleShowMore}
-						className="bg-teal-500 hover:bg-teal-700 text-white font-bold w-10 h-10 rounded-full mt-5 transition-colors duration-500 ease-in-out animate-pulse"
-						style={{ animationDuration: "0.75s" }}
+						onMouseEnter={handleMouseEnter}
+						onMouseLeave={handleMouseLeave}
+						className={`relative w-10 h-10 rounded-full mt-5 transition-colors duration-500 ease-in-out ${
+							isHovered
+								? "bg-teal-700"
+								: "bg-teal-500 hover:bg-teal-700 animate-pulse"
+						}`}
+						style={isHovered ? {} : { animationDuration: "0.75s" }}
 					>
 						{showMore ? (
 							<div>
