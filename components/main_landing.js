@@ -22,6 +22,7 @@ export default function MainLanding(props) {
 					<TypeAnimation
 						sequence={[
 							"Student.", 
+							1500,
 							"Developer.",
 							1500, 
 							"Engineer.", 
