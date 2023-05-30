@@ -11,7 +11,6 @@ import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 
 export default function MainLanding(props) {
-	const mediaQuery = window.matchMedia("(min-width: 768px)");
 
 	return (
 		<div className="my-5">
