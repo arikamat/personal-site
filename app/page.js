@@ -19,13 +19,13 @@ export default function Home() {
 					<NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
 					<MainLanding />
 				</section>
-				<section className=" bg-gray-200 dark:bg-gray-900 px-10 md:px-20 lg:px-60 py-4 mt-25">
+				<section id="about" className=" bg-gray-200 dark:bg-gray-900 px-10 md:px-20 lg:px-60 py-4 mt-25">
 					<About />
 				</section>
 				{/* <section className=" bg-gray-200 dark:bg-gray-900 px-10 md:px-20 lg:px-60 py-4">
 					<Featured />
 				</section> */}
-				<section className=" bg-gray-200 dark:bg-gray-900 px-10 md:px-20 lg:px-60 py-4">
+				<section id="projects" className=" bg-gray-200 dark:bg-gray-900 px-10 md:px-20 lg:px-60 py-4">
 					<Projects />
 				</section>
 				<Footer />

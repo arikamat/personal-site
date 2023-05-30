@@ -14,7 +14,7 @@ export default function About(props) {
 		setIsHovered(false);
 	};
 	return (
-		<div className="relative bg-white ring-2 ring-zinc-100 dark:bg-gray-800 dark:ring-slate-500 p-10 rounded-xl drop-shadow my-10">
+		<div  className="relative bg-white ring-2 ring-zinc-100 dark:bg-gray-800 dark:ring-slate-500 p-10 rounded-xl drop-shadow my-10">
 			<div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 xl:max-w-none xl:grid-cols-2 items-center">
 				<div>
 					<h3 className="text-3xl py-1 px-10 dark:text-white ">
@@ -31,8 +31,7 @@ export default function About(props) {
 						people&apos;s lives.
 						<br />
 						<br />
-						When I&apos;m not &ldquo;Playing Visual Studio Code
-						&rdquo;, you can find me taking pictures of sunsets with
+						When I&apos;m not &ldquo;Playing Visual Studio Code&rdquo;, you can find me taking pictures of sunsets with
 						my sister, watching KDramas, drinking coffee, enjoying a
 						Bollywood movie with my family, or playing Valorant with
 						my friends.

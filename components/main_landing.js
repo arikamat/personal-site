@@ -21,13 +21,13 @@ export default function MainLanding(props) {
 					<TypeAnimation
 						sequence={[
 							"Student.", 
-							1000, // Waits 1s
+							1500, // Waits 1s
 							"Developer.",
-							1000, // Waits 1s
+							1500, // Waits 1s
 							"Roboticist.", 
-							1000,
+							750,
 							"Engineer.", 
-							1000,
+							750,
 						]}
 						wrapper="span"
 						cursor={true}

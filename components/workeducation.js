@@ -45,7 +45,7 @@ const WorkEducation = () => {
 
 			<Item
 				title="B.S. Computer Science and Applied Mathematics"
-				company="NJIT | Albert Dorman Honors College"
+				company="NJIT | Honors College"
 				icon={njit}
 				gpa={"4.0/4.0"}
 				date="9/2022 - 5/2026"
