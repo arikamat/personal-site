@@ -10,7 +10,7 @@ export default function Card(props) {
 	const tools = project.tools;
 	const attachments = project.attachments;
 	return (
-		<div className="hadow-lg p-10 rounded-xl my-5 bg-gray-200 dark:bg-gray-900 cursor-pointer">
+		<div className="p-10 rounded-xl my-5 bg-gray-200 dark:bg-gray-900 cursor-pointer">
 			<div>
 				<h3 className="text-xl font-medium dark:text-white ">
 					<span className="border-b-4 border-teal-600 dark:border-teal-300 text-left">

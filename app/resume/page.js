@@ -1,10 +1,11 @@
 "use client";
 import NavBar from "@/components/navbar";
-import { useState } from "react";
+import { useContext } from "react";
 import React from "react";
+import { DarkModeContext } from "../../context/DarkModeProvider";
 
 export default function Home(props) {
-	const [darkMode, setDarkMode] = useState(true);
+	const { darkMode, setDarkMode } = useContext(DarkModeContext);
 	return (
 		<div className={darkMode ? "dark" : "light"}>
 			<main className="min-h-screen bg-white dark:bg-gray-900 text-black">

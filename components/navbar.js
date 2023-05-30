@@ -1,47 +1,41 @@
 "use client";
 import React from "react";
+import { useContext } from "react";
 import { BsFillMoonStarsFill, BsFillBrightnessHighFill } from "react-icons/bs";
-const NavBar = (props) => {
+import { DarkModeContext } from "../context/DarkModeProvider";
+import Link from "next/link";
+const NavBar = () => {
+	const { darkMode, setDarkMode } = useContext(DarkModeContext);
 	return (
 		<nav className="py-10 mb-5 flex justify-between">
-			{/* <div>
-							<Typewriter
-								onInit={(typewriter) => {
-									typewriter
-										.typeString(">>> who am i")
-										.pauseFor(1000)
-										.pasteString("<br/>arikamat")
-										.start();
-								}}
-							/>
-						</div> */}
-			<a href="/" className="my-auto">
+			
+			<Link href="/" className="my-auto">
 				<h1 className="text-xl font-burtons dark:text-white">
 					Ari Kamat
 				</h1>
-			</a>
+			</Link>
 			<ul className="flex items-center">
 				<li>
-					<a
+					<Link
 						className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 border-none mr-8 rounded"
 						href="/resume"
 					>
 						Resume
-					</a>
+					</Link>
 				</li>
 				<li>
 					<div className="rounded-full border border-gray-500 p-3">
-						{props.darkMode ? (
+						{darkMode ? (
 							<BsFillBrightnessHighFill
 								onClick={() =>
-									props.setDarkMode(!props.darkMode)
+									setDarkMode(!darkMode)
 								}
 								className=" cursor-pointer text-2xl dark:text-white"
 							/>
 						) : (
 							<BsFillMoonStarsFill
 								onClick={() =>
-									props.setDarkMode(!props.darkMode)
+									setDarkMode(!darkMode)
 								}
 								className=" cursor-pointer text-2xl dark:text-white"
 							/>

@@ -1,8 +1,18 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import WorkEducation from "../components/workeducation";
-import {BsFileText} from "react-icons/bs";
+import { BsFileText } from "react-icons/bs";
+import Link from "next/link";
 export default function About(props) {
+	const [isHovered, setIsHovered] = useState(false);
+
+	const handleMouseEnter = () => {
+		setIsHovered(true);
+	};
+
+	const handleMouseLeave = () => {
+		setIsHovered(false);
+	};
 	return (
 		<div className="relative bg-white ring-2 ring-zinc-100 dark:bg-gray-800 dark:ring-slate-500 p-10 rounded-xl drop-shadow my-10">
 			<div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 xl:max-w-none xl:grid-cols-2 items-center">
@@ -21,19 +31,32 @@ export default function About(props) {
 						people&apos;s lives.
 						<br />
 						<br />
-						When I&apos;m not &ldquo;Playing Visual Studio
-						Code &rdquo;, you can find me taking pictures of sunsets
-						with my sister, watching KDramas, drinking coffee,
-						enjoying a Bollywood movie with my family, or playing
-						Valorant with my friends.
+						When I&apos;m not &ldquo;Playing Visual Studio Code
+						&rdquo;, you can find me taking pictures of sunsets with
+						my sister, watching KDramas, drinking coffee, enjoying a
+						Bollywood movie with my family, or playing Valorant with
+						my friends.
 					</p>
-					<a
+
+					<Link
 						href="/about"
-						className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 ml-10 py-2 border-none mr-8 rounded"
+						className="text-white ml-10 py-2 border-none mr-8 rounded"
 					>
-						{" "}
-						Learn more about me{" "}
-					</a>
+						<span
+							className={`bg-teal-700 text-white px-4 py-3 border-none mr-8 rounded transition-colors duration-500 ease-in-out${
+								isHovered
+									? " bg-teal-700"
+									: " bg-teal-500 hover:bg-teal-700 animate-pulse"
+							}`}
+							onMouseEnter={handleMouseEnter}
+							onMouseLeave={handleMouseLeave}
+							style={
+								isHovered ? {} : { animationDuration: "1.5s" }
+							}
+						>
+							Learn more about me
+						</span>
+					</Link>
 				</div>
 				<WorkEducation />
 			</div>
