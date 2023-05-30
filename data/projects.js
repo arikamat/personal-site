@@ -14,8 +14,7 @@ export const projectsData = [
 		],
 		attachments: {
 			"github.com": "https://github.com/arikamat/franchise-data-provider",
-		},
-		link: "/franchise-data-provider",
+		}
 	},
 	{
 		id: 2,
@@ -32,8 +31,7 @@ export const projectsData = [
 		],
 		attachments: {
 			"github.com": "https://github.com/Vacation-HomeStay/HomeStay",
-		},
-		link: "/havel",
+		}
 	},
 	{
 		id: 2.5,
@@ -49,8 +47,7 @@ export const projectsData = [
 		],
 		attachments: {
 			"github.com": "https://github.com/LastMileApp/LastMileApp",
-		},
-		link: "/last-mile",
+		}
 	},
 	{
 		id: 3,
@@ -66,8 +63,7 @@ export const projectsData = [
 		],
 		attachments: {
 			"github.com": "https://github.com/LastMileApp/LastMileApp",
-		},
-		link: "/last-mile",
+		}
 	},
 	{
 		id: 4,

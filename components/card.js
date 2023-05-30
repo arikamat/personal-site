@@ -9,7 +9,6 @@ export default function Card(props) {
 	const description = project.description;
 	const tools = project.tools;
 	const attachments = project.attachments;
-	const link = project.link;
 	return (
 		<div className="hadow-lg p-10 rounded-xl my-5 bg-gray-200 dark:bg-gray-900 cursor-pointer">
 			<div>
