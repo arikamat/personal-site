@@ -3,6 +3,7 @@ import NavBar from "@/components/navbar";
 import { useContext } from "react";
 import React from "react";
 import { DarkModeContext } from "../../context/DarkModeProvider";
+import Footer from "@/components/footer";
 
 export default function Home(props) {
 	const { darkMode, setDarkMode } = useContext(DarkModeContext);
@@ -18,7 +19,14 @@ export default function Home(props) {
 					type="application/pdf"
 					className="w-full h-full"
 					style={{ height: "100vh" }}
+				>
+				<embed
+					src="https://drive.google.com/file/d/1dejaFt3ovkErPFNGLrImvbg4xir3bF3i/preview?usp=sharing"
+					className="w-full h-full"
+					style={{ height: "100vh" }}
 				/>
+				</object>
+				<Footer/>
 				{/* </div> */}
 				{/* <object
 					data="/Ari_Kamat_Resume.pdf#view=FitV"
