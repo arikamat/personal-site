@@ -15,7 +15,8 @@ export default function Home() {
 	const { darkMode, setDarkMode } = useContext(DarkModeContext);
 	return (
 		<div className={darkMode ? "dark" : "light"}>
-			<main className=" scroll-smooth dark:text-white  bg-gradient-to-br  from-blue-200 to-cyan-300 dark:from-cyan-700  dark:to-gray-900  text-black animate-gradient-x">
+			{/* <main className=" scroll-smooth dark:text-white  bg-gradient-to-br  from-blue-200 to-cyan-300 dark:from-cyan-700  dark:to-gray-900  text-black animate-gradient-x"> */}
+			<main className=" scroll-smooth dark:text-white from-blue-200 to-cyan-300   dark:bg-gray-900  text-black ">
 				<section className="min-h-screen  px-10 md:px-20 lg:px-40">
 					<NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
 					<MainLanding />
