@@ -7,7 +7,7 @@ export default function Tool(props) {
 		// 	<p className="dark:text-white text-black text-sm">{name}</p>
 		// </div>\
 		<li className="inline-block">
-			<span className="inline-flex items-center rounded-full bg-zinc-100 px-3 py-0.5 text-xs  text-black dark:bg-gray-800 dark:text-white">
+			<span className="inline-flex items-center rounded-full bg-zinc-100 px-3 py-0.5 text-xs  text-black dark:bg-gray-800 dark:text-white" key={props.key}>
 				{name}
 			</span>
 		</li>

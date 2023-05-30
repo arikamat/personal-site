@@ -1,7 +1,7 @@
 export const projectsData = [
 	{
 		id: 1,
-		title: "Franchise Data Provider",
+		title: "DemoBiz",
 		year: "2023",
 		description:
 			"Generates and delivers demographic and business data for aspiring business owners based on their chosen zip codes and target industries via email.",
@@ -35,7 +35,7 @@ export const projectsData = [
 	},
 	{
 		id: 2.5,
-		title: "NJ Transit Reward System",
+		title: "NJT Rewards",
 		year: "2023",
 		description:
 			"Utilized user’s transit tendencies and trends to suggest tailored local businesses to users, revamping its reward system. Presented to NJTransit @ HackRU 2023",
@@ -67,10 +67,10 @@ export const projectsData = [
 	},
 	{
 		id: 4,
-		title: "Notion Schedule Generator",
+		title: "NJIT Planner",
 		year: "2022",
 		description:
-			"An application that generatews a calendar on notion for NJIT students to plan out their semester.",
+			"An application that generatews a calendar on Notion for NJIT students to plan out their semester.",
 		tools: [
 			{ id: 0, name: "Python" },
 			{ id: 1, name: "Twilio" },

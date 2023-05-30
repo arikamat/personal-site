@@ -12,7 +12,7 @@ import Item from "./item";
 const WorkEducation = () => {
 	// const { darkMode } = props;
 	return (
-		<div className="flex flex-col bg-gray-100 dark:bg-gray-900 p-8 rounded-xl my-auto lg:ml-5">
+		<div className="flex flex-col bg-gray-100 dark:bg-gray-900 p-4 md:p-8 rounded-xl my-auto lg:ml-5">
 			<div className="flex items-center dark:text-white mb-3">
 				<BiBriefcase className="text-xl  mr-2 my-auto" />
 				<h2 className="my-auto">Relevant Experience</h2>

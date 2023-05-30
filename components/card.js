@@ -10,16 +10,16 @@ export default function Card(props) {
 	const tools = project.tools;
 	const attachments = project.attachments;
 	return (
-		<div className="p-10 rounded-xl my-5 bg-gray-200 dark:bg-gray-900 cursor-pointer">
+		<div className="p-5 md:p-10 rounded-xl my-5  bg-gray-200 dark:bg-gray-900 cursor-pointer">
 			<div>
-				<h3 className="text-xl font-medium dark:text-white ">
+				<h3 className="text-xl font-medium dark:text-white 2xl:h-10 ">
 					<span className="border-b-4 border-teal-600 dark:border-teal-300 text-left">
 						{title + " · " + year}
 					</span>
 				</h3>
 			</div>
 
-			<p className="py-2 dark:text-white h-40 text-sm mt-5 text-left">
+			<p className="py-2 2xl:h-40 dark:text-white text-sm mt-5 text-left">
 				{description}
 			</p>
 			<div className="dark:text-white my-5">

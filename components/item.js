@@ -9,8 +9,8 @@ const Item = (props) => {
 
 	return (
 		<div className="flex items-center my-3">
-			<div className="w-10 h-10 rounded-full overflow-hidden">
-				<Image src={icon} />
+			<div className=" w-8 h-8 md:w-10 md:h-10 rounded-full overflow-hidden">
+				<Image src={icon} alt="icon" />
 			</div>
 			<div className="flex flex-col mx-5 flex-grow">
 				<h3 className=" font-semibold text-sm dark:text-white">{company}</h3>
