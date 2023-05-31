@@ -14,7 +14,7 @@ export default function About(props) {
 		setIsHovered(false);
 	};
 	return (
-		<div  className="relative bg-white ring-2 ring-zinc-100 dark:bg-gray-800 dark:ring-slate-500 pt-10 p-5 md:p-10 rounded-xl drop-shadow my-10">
+		<div className="relative bg-white ring-2 ring-zinc-100 dark:bg-gray-800 dark:ring-slate-500 pt-10 p-5 md:p-10 rounded-xl drop-shadow my-10">
 			<div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 xl:max-w-none xl:grid-cols-2 items-center">
 				<div>
 					<h3 className="text-3xl py-1 md:px-10 dark:text-white ">
@@ -26,36 +26,29 @@ export default function About(props) {
 						Hello there! I&apos;m Ari, an undergraduate studying
 						Computer Science and Applied Mathematics at the Honors
 						College of New Jersey Institute of Technology. I&apos;m
-						passionate about all things technology, math, and robotics and love building
-						software, especially when it has a real impact on
-						people&apos;s lives.
+						passionate about all things technology, math, and
+						robotics and love building software, especially when it
+						has a real impact on people&apos;s lives.
 						<br />
 						<br />
-						When I&apos;m not &ldquo;Playing Visual Studio Code&rdquo;, you can find me taking pictures of sunsets with
-						my sister, watching KDramas, drinking coffee, enjoying a
-						Bollywood movie with my family, or playing Valorant with
-						my friends.
+						When I&apos;m not &ldquo;Playing Visual Studio
+						Code&rdquo;, you can find me taking pictures of sunsets
+						with my sister, watching KDramas, drinking coffee,
+						enjoying a Bollywood movie with my family, or playing
+						Valorant with my friends.
+						<br />
+						<br />
+						<span>
+							<Link href="/gallery">
+								<span className="text-blue-500 underline hover:text-blue-700 cursor-pointer">
+									Click here to see some of the things I work
+									on.
+								</span>
+							</Link>
+						</span>
 					</p>
 
-					<Link
-						href="/about"
-						className="text-white py-2 border-none  rounded mx-auto"
-					>
-						<span
-							className={`bg-teal-700 text-white px-4 py-3 border-none md:ml-10 rounded transition-colors duration-500 ease-in-out${
-								isHovered
-									? " bg-teal-700"
-									: " bg-teal-500 hover:bg-teal-700 animate-pulse"
-							}`}
-							onMouseEnter={handleMouseEnter}
-							onMouseLeave={handleMouseLeave}
-							style={
-								isHovered ? {} : { animationDuration: "1.5s" }
-							}
-						>
-							Learn more
-						</span>
-					</Link>
+					
 				</div>
 				<WorkEducation />
 			</div>
