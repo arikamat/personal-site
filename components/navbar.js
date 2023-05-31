@@ -31,7 +31,7 @@ const NavBar = () => {
 				</h1>
 			</Link>
 			<ul className="flex items-center">
-				<li className="hidden sm:block">
+				<li className="hidden lg:block">
 					<a
 						className={
 							"dark:text-white text-black px-4 py-2 border-none mr-8 rounded-lg flex-1 hover:bg-gray-200 dark:hover:bg-gray-800 transition duration-300"
@@ -42,7 +42,7 @@ const NavBar = () => {
 						01. About
 					</a>
 				</li>
-				<li className="hidden sm:block">
+				<li className="hidden lg:block">
 					<a
 						className="dark:text-white text-black px-4 py-2 border-none mr-8 rounded-lg flex-1 hover:bg-gray-200 dark:hover:bg-gray-800 transition duration-300"
 						href="/#about"
@@ -50,7 +50,7 @@ const NavBar = () => {
 						02. Experience
 					</a>
 				</li>
-				<li className="hidden sm:block">
+				<li className="hidden lg:block">
 					<a
 						className="dark:text-white text-black px-4 py-2 border-none mr-8 rounded-lg flex-1 hover:bg-gray-200 dark:hover:bg-gray-800 transition duration-300"
 						href="/#projects"
@@ -58,7 +58,7 @@ const NavBar = () => {
 						03. Projects
 					</a>
 				</li>
-				<li className="hidden sm:block">
+				<li className="hidden lg:block">
 					<a
 						className="dark:text-white text-black px-4 py-2 border-none mr-8 rounded-lg flex-1 hover:bg-gray-200 dark:hover:bg-gray-800 transition duration-300"
 						href="/#research"
