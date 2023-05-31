@@ -26,7 +26,7 @@ export default function About(props) {
 						Hello there! I&apos;m Ari, an undergraduate studying
 						Computer Science and Applied Mathematics at the Honors
 						College of New Jersey Institute of Technology. I&apos;m
-						passionate about all things technology and love building
+						passionate about all things technology, math, and robotics and love building
 						software, especially when it has a real impact on
 						people&apos;s lives.
 						<br />
