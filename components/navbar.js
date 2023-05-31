@@ -36,7 +36,7 @@ const NavBar = () => {
 						className={
 							"dark:text-white text-black px-4 py-2 border-none mr-8 rounded-lg flex-1 hover:bg-gray-200 dark:hover:bg-gray-800 transition duration-300"
 						}
-						href="#about"
+						href="/#about"
 						scroll={false}
 					>
 						01. About
@@ -45,9 +45,25 @@ const NavBar = () => {
 				<li className="hidden sm:block">
 					<a
 						className="dark:text-white text-black px-4 py-2 border-none mr-8 rounded-lg flex-1 hover:bg-gray-200 dark:hover:bg-gray-800 transition duration-300"
-						href="#projects"
+						href="/#about"
 					>
-						02. Projects
+						02. Experience
+					</a>
+				</li>
+				<li className="hidden sm:block">
+					<a
+						className="dark:text-white text-black px-4 py-2 border-none mr-8 rounded-lg flex-1 hover:bg-gray-200 dark:hover:bg-gray-800 transition duration-300"
+						href="/#projects"
+					>
+						03. Projects
+					</a>
+				</li>
+				<li className="hidden sm:block">
+					<a
+						className="dark:text-white text-black px-4 py-2 border-none mr-8 rounded-lg flex-1 hover:bg-gray-200 dark:hover:bg-gray-800 transition duration-300"
+						href="/#research"
+					>
+						04. Research
 					</a>
 				</li>
 				<li>
