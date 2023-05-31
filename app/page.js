@@ -11,6 +11,7 @@ import Projects from "../components/projects";
 import { DarkModeContext } from "../context/DarkModeProvider";
 import Footer from "@/components/footer";
 import Resume from "@/components/resume";
+import Research from "@/components/research";
 export default function Home() {
 	const { darkMode, setDarkMode } = useContext(DarkModeContext);
 	return (
@@ -37,6 +38,12 @@ export default function Home() {
 					<Projects />
 				</section>
 			
+				<section
+					id="research"
+					className=" bg-gray-200 dark:bg-gray-900 px-10 md:px-20 lg:px-60 py-4"
+				>
+					<Research/>
+				</section>
 				<Footer />
 			</main>
 		</div>

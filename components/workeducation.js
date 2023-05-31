@@ -14,8 +14,8 @@ const WorkEducation = () => {
 	return (
 		<div className="flex flex-col bg-gray-100 dark:bg-gray-900 p-4 md:p-8 rounded-xl my-auto lg:ml-5">
 			<div className="flex items-center dark:text-white mb-3">
-				<BiBriefcase className="text-xl  mr-2 my-auto" />
-				<h2 className="my-auto">Relevant Experience</h2>
+				<BiBriefcase className="text-xl  mr-2 my-auto font-bold" />
+				<h2 className="my-auto font-bold">Experience</h2>
 			</div>
 
 			<Item
@@ -37,10 +37,21 @@ const WorkEducation = () => {
 				icon={ms}
 				date="7/2021 - 6/2022"
 			/>
+			<div className="flex items-center dark:text-white my-3 ">
+				<SlGraduation className="text-xl  mr-2 my-auto  font-bold" />
+				<h2 className="my-auto font-bold">Research</h2>
+			</div>
 
-			<div className="flex items-center dark:text-white my-3">
-				<SlGraduation className="text-xl  mr-2 my-auto" />
-				<h2 className="my-auto">Education</h2>
+			<Item
+				title="Technology Intern"
+				company="NJIT"
+				icon={njit}
+				date="2/2023 - Present"
+			/>
+
+			<div className="flex items-center dark:text-white my-3 ">
+				<SlGraduation className="text-xl  mr-2 my-auto  font-bold" />
+				<h2 className="my-auto font-bold">Education</h2>
 			</div>
 
 			<Item
