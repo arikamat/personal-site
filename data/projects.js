@@ -46,7 +46,7 @@ export const projectsData = [
 			{ id: 3, name: "Bing API" },
 		],
 		attachments: {
-			"github.com": "https://github.com/LastMileApp/LastMileApp",
+			"github.com": "https://github.com/TransitRewards/TransitRewards2",
 		}
 	},
 	{
