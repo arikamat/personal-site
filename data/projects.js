@@ -7,7 +7,7 @@ export const projectsData = [
 			"Generates and delivers demographic and business data for aspiring business owners based on their chosen zip codes and target industries via email.",
 		tools: [
 			{ id: 0, name: "Flask" },
-			{ id: 1, name: "Python" },
+			{ id: 1, name: "Python 3" },
 			{ id: 2, name: "Celery" },
 			{ id: 3, name: "Redis" },
 			{ id: 3, name: "Pandas" },
@@ -72,7 +72,7 @@ export const projectsData = [
 		description:
 			"An application that generatews a calendar on Notion for NJIT students to plan out their semester.",
 		tools: [
-			{ id: 0, name: "Python" },
+			{ id: 0, name: "Python 3" },
 			{ id: 1, name: "Twilio" },
 			{ id: 2, name: "Notion API" },
 			{ id: 3, name: "Pandas" },
@@ -119,7 +119,7 @@ export const projectsData = [
 		description:
 			"An application that sends notifications to a group of stock traders whenever a recognized indicator is detected for a list of inputted securities. Application also paper trades the securities based on the identified indicators.",
 		tools: [
-			{ id: 0, name: "Python3" },
+			{ id: 0, name: "Python 3" },
 			{ id: 0, name: "Alpaca API" },
 			{ id: 0, name: "Discord API" },
 		],
