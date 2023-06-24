@@ -38,14 +38,14 @@ export default function About(props) {
 						Valorant with my friends.
 						<br />
 						<br />
-						<span>
+						{/* <span>
 							<Link href="/gallery">
 								<span className="text-blue-500 underline hover:text-blue-700 cursor-pointer">
 									Click here to see some of the things I work
 									on.
 								</span>
 							</Link>
-						</span>
+						</span> */}
 					</p>
 
 					
