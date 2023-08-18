@@ -8,7 +8,7 @@ export default function Research() {
 				<span className="border-b-4 border-teal-600 dark:border-teal-300">
 					Research
 				</span>
-				<div className="grid grid-cols-1 2xl:grid-cols-2 gap-5">
+				<div className="grid grid-cols-1 2xl:grid-cols-1 gap-5">
 				{researchData.map((project) => (
 					<Card project={project} key={project.id} />
 				))}

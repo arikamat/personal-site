@@ -46,7 +46,7 @@ export default function Projects(props) {
 								? "bg-teal-700"
 								: "bg-teal-500 hover:bg-teal-700 animate-pulse"
 						}`}
-						style={isHovered ? {} : { animationDuration: "0.75s" }}
+						style={isHovered ? {} : { animationDuration: "1.5s" }}
 					>
 						{showMore ? (
 							<div>

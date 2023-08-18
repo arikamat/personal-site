@@ -32,10 +32,8 @@ export default function About(props) {
 						<br />
 						<br />
 						When I&apos;m not &ldquo;Playing Visual Studio
-						Code&rdquo;, you can find me taking pictures of sunsets
-						with my sister, watching KDramas, drinking coffee,
-						enjoying a Bollywood movie with my family, or playing
-						Valorant with my friends.
+						Code&rdquo;, you can find me taking pictures of sunsets, watching KDramas and Bollywood, or playing
+						Valorant.
 						<br />
 						<br />
 						{/* <span>
